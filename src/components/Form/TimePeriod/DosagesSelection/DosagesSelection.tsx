@@ -11,15 +11,27 @@ let mounted = false;
 
 function DosagesSelection() {
 	const dispatch = useDispatch();
-	const { dosages, dbsLabs, leLabs } = useSelector((state: {patientData: {dosages: any[], dbsLabs: any[], leLabs: any[]}}) => {
-		return state.patientData;
-	});
+	const { dosages, dbsLabs, leLabs } = useSelector(
+		(state: {
+			patientData: { dosages: any[]; dbsLabs: any[]; leLabs: any[] };
+		}) => {
+			return state.patientData;
+		}
+	);
 
-	const { selectedDoses } = useSelector((state: {timePeriod: {selectedDoses: string[]}}) => state.timePeriod);
+	const { selectedDoses } = useSelector(
+		(state: StateObject) =>
+			state.timePeriod
+	);
 
-	const { selectedAxisChoices } = useSelector((state: {YAxisChoices: {selectedAxisChoices: string | string[]}}) => state.YAxisChoices);
+	const { selectedAxisChoices } = useSelector(
+		(state: { YAxisChoices: { selectedAxisChoices: string | string[] } }) =>
+			state.YAxisChoices
+	);
 
-	const { selectedTest } = useSelector((state: {testsList: {selectedTest: string}}) => state.testsList);
+	const { selectedTest } = useSelector(
+		(state: { testsList: { selectedTest: string } }) => state.testsList
+	);
 
 	useEffect(() => {
 		if (!mounted) {
@@ -65,35 +77,20 @@ function DosagesSelection() {
 		(selectedAxisChoices.length === 1 &&
 			selectedAxisChoices[0] === 'NT Tests')
 	) {
-		if (selectedTest === 'DBS Labs') {
-			renderedDosageOptions = [...dbsLabs].reverse().map((dose) => {
-				return (
-					<MenuItem key={dose.date} value={dose.date}>
-						<Checkbox checked={selectedDoses.includes(dose.date)} />
-						<div>
-							<div>{dose.date}</div>
-							<div>5-htp: {dose['5-htp']}mg</div>
-							<div>L-dopa: {dose['L-dopa']}mg</div>
-							<div>Tyrosine: {dose['Tyrosine']}mg</div>
-						</div>
-					</MenuItem>
-				);
-			});
-		} else if (selectedTest === 'Life Extension') {
-			renderedDosageOptions = [...leLabs].reverse().map((dose) => {
-				return (
-					<MenuItem key={dose.date} value={dose.date}>
-						<Checkbox checked={selectedDoses.includes(dose.date)} />
-						<div>
-							<div>{dose.date}</div>
-							<div>5-htp: {dose['5-htp']}mg</div>
-							<div>L-dopa: {dose['L-dopa']}mg</div>
-							<div>Tyrosine: {dose['Tyrosine']}mg</div>
-						</div>
-					</MenuItem>
-				);
-			});
-		}
+		const selectedLab = selectedTest === 'DBS Labs' ? dbsLabs : leLabs;
+		renderedDosageOptions = [...selectedLab].reverse().map((dose) => {
+			return (
+				<MenuItem key={dose.date} value={dose.date}>
+					<Checkbox checked={selectedDoses.includes(dose.date)} />
+					<div>
+						<div>{dose.date}</div>
+						<div>5-htp: {dose['5-htp']}mg</div>
+						<div>L-dopa: {dose['L-dopa']}mg</div>
+						<div>Tyrosine: {dose['Tyrosine']}mg</div>
+					</div>
+				</MenuItem>
+			);
+		});
 	}
 
 	return (

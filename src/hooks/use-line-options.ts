@@ -11,16 +11,17 @@ function useLineOptions() {
 	const {
 		chartType: {selectedChartId},
 		YAxisChoices: {selectedAxisChoices},
-		timePeriod: {allDosages, selectedDoses},
+		timePeriod: {filterChoice, selectedDoses},
 		patientData: {dosages},
-		testsList: {selectedTest}} = useSelector((state): any => state)
+		testsList: {selectedTest}} = useSelector((state: StateObject) => state)
 
 	const chartIdIsOne = selectedChartId === 'lineOne'
 	const chartIdIsTwo = selectedChartId === 'lineTwo'
+	const allDosages = filterChoice === 'all dosages'
 	const symptomsAxisSelected = selectedAxisChoices.includes('Symptoms')
 	const dosagesAxisSelected = selectedAxisChoices.includes('Dosages')
 	const testsAxisSelected = selectedAxisChoices.includes('NT Tests')
-	const selectedDosesValid = selectedDoses.length
+	const selectedDosesValid = filterChoice === 'specific dosages'
 
 	if (chartIdIsOne && selectedDosesValid && symptomsAxisSelected) {
 		return lineOneSymptomsSpecificDosages({dosages, selectedDoses})
@@ -39,7 +40,7 @@ function useLineOptions() {
 		return lineOneDosagesAllDosages()
 	}
 
-	if (chartIdIsOne && dosagesAxisSelected && symptomsAxisSelected && allDosages) {
+	if (chartIdIsTwo && dosagesAxisSelected && symptomsAxisSelected && allDosages) {
 		return lineTwoDosagesSymptomsAllDosages()
 	}
 

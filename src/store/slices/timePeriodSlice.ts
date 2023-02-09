@@ -8,30 +8,50 @@ const matchExternalActions = (action: any) => {
 }
 
 const startingState: TimePeriodState = {
-  allDosages: false,
+  filterChoice: 'specific dosages',
   selectedDoses: [],
   dateRange: {
-    active: false,
     start: '',
     end: ''
   },
-  specificTimeFrame: [],
+  specificTimeFrame: '',
+  specificYears: [],
   dosageRange: {
-    active: false,
+    selectedAminos: [],
     '5-htp': {
-      active: false,
-      start: 0,
-      end: 0
+      start: '',
+      end: ''
     },
     'L-dopa': {
-      active: false,
-      start: 0,
-      end: 0
+      start: '',
+      end: ''
     },
     'Tyrosine': {
-      active: false,
-      start: 0,
-      end: 0
+      start: '',
+      end: ''
+    }
+  }
+}
+
+const cleanState = (state: TimePeriodState) => {
+  state.selectedDoses = []
+  state.filterChoice = ''
+  state.dateRange = {start: '', end: ''}
+  state.specificTimeFrame = ''
+  state.specificYears = []
+  state.dosageRange = {
+    selectedAminos: [],
+    '5-htp': {
+      start: '',
+      end: ''
+    },
+    'L-dopa': {
+      start: '',
+      end: ''
+    },
+    'Tyrosine': {
+      start: '',
+      end: ''
     }
   }
 }
@@ -40,58 +60,41 @@ const timePeriodSlice = createSlice({
   name: 'timePeriod',
   initialState: startingState,
   reducers: {
-    changeAllDosages(state, action) {
-      state.allDosages = !state.allDosages
-      if (state.allDosages) {
-        state.selectedDoses = []
-        state.dateRange.active = false
-        state.dosageRange.active = false
-      }
+    changeFilterChoice(state, action) {
+      cleanState(state)
+      state.filterChoice = action.payload
     },
     updateSelectedDoses(state, action) {
-      state.allDosages = false
-      state.dateRange.active = false
       state.selectedDoses = action.payload
-      state.dosageRange.active = false
     },
     updateSpecificTimeFrame(state, action) {
-      state.allDosages = false
-      state.dateRange.active = false
-      state.selectedDoses = []
-      state.dosageRange.active = false
       state.specificTimeFrame = action.payload
     },
-    updateDosageRange(state, action: {payload: {amino: string, start: number, end: number}}) {
-      state.allDosages = false
-      state.dateRange.active = false
-      state.selectedDoses = []
-      state.specificTimeFrame = []
-      state.dosageRange.active = true
-
-      for (let acid in state.dosageRange) {
-        if (acid !== 'active') {
-          state.dosageRange[acid].active = false
-          state.dosageRange[acid].start = 0
-          state.dosageRange[acid].end = 0
-        }
+    updateDosageRange(state, action: {payload: {amino: string, start?: string, end?: string}}) {
+      if (action.payload.start !== undefined) {
+        state.dosageRange[action.payload.amino].start = action.payload.start
       }
-
-      state.dosageRange[action.payload.amino] = {
-        active: true,
-        start: action.payload.start,
-        end: action.payload.end
+      if (action.payload.end !== undefined) {
+        state.dosageRange[action.payload.amino].end = action.payload.end
       }
+    },
+    updateSpecificYears(state, action) {
+      state.specificYears = action.payload
+    },
+    updateDateRange(state, action) {
+      state.dateRange.start = action.payload.start
+      state.dateRange.end = action.payload.end
+    },
+    updateDosageSelection(state, action) {
+      state.dosageRange.selectedAminos = action.payload
     }
   },
   extraReducers: (builder) => {
     builder.addMatcher(matchExternalActions, (state, action) => {
-      state.allDosages = false
-      state.dateRange.active = false
-      state.dosageRange.active = false
-      state.selectedDoses = []
+      cleanState(state)
     })
   }
 })
 
-export const {changeAllDosages, updateSelectedDoses, updateSpecificTimeFrame, updateDosageRange} = timePeriodSlice.actions
+export const {changeFilterChoice, updateSelectedDoses, updateSpecificTimeFrame, updateDosageRange, updateSpecificYears, updateDateRange, updateDosageSelection} = timePeriodSlice.actions
 export const timePeriodReducer = timePeriodSlice.reducer

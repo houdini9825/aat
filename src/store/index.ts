@@ -14,7 +14,7 @@ import { patientDataReducer } from './slices/patientDataSlice';
 
 import {changeAminoOption, dosageOptionsReducer} from './slices/dosageOptionsSlice'
 
-import {changeAllDosages, timePeriodReducer, updateSelectedDoses, updateSpecificTimeFrame, updateDosageRange} from './slices/timePeriodSlice'
+import {changeFilterChoice, timePeriodReducer, updateSelectedDoses, updateSpecificTimeFrame, updateDosageRange, updateSpecificYears, updateDateRange, updateDosageSelection} from './slices/timePeriodSlice'
 
 import {changeSelectedTest, testsListReducer} from './slices/testsListSlice'
 
@@ -37,7 +37,7 @@ export { store };
 export { changeSelectedType };
 export {changeAminoOption}
 export {changeSelectedTest}
-export {changeAllDosages, updateSelectedDoses, updateSpecificTimeFrame, updateDosageRange}
+export {changeFilterChoice, updateSelectedDoses, updateSpecificTimeFrame, updateDosageRange, updateSpecificYears, updateDateRange, updateDosageSelection}
 export { changeSelectedAxisChoices };
 export { changeSelectedSymptoms };
 export {changeDirection, changeEntity}

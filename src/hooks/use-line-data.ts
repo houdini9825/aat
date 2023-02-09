@@ -5,30 +5,31 @@ import lineOneTestsSpecificDosages from '../helpers/LineGraph/Data/LineOneAxis/l
 import lineOneSymptomsSpecificDosages from '../helpers/LineGraph/Data/LineOneAxis/lineOneSymptomsSpecificDosages';
 import lineTwoTestsDosages from '../helpers/LineGraph/Data/LineTwoAxes/lineTwoTestsDosages';
 import lineOneTestsAllDosages from '../helpers/LineGraph/Data/LineOneAxis/lineOneTestsAllDosages';
-import useSortedData from './use-sorted-data';
+import useSortedFilteredData from '../hooks/use-sorted-filtered-data'
 
 function useLineData() {
 	let {
 		chartType: { selectedChartId },
 		YAxisChoices: { selectedAxisChoices },
-		timePeriod: { allDosages, selectedDoses },
-		patientData: { dosages, dbsLabs, leLabs },
+		timePeriod: { filterChoice, selectedDoses },
+		patientData: { dosages: oldDosages, dbsLabs: oldDbs, leLabs: oldLe },
 		testsList: { selectedTest },
 		dosageOptions: { selectedAminos },
 		symptoms: { selectedSymptoms: symptoms },
-	} = useSelector((state): any => state);
+	} = useSelector((state: StateObject) => state);
 
-	dosages = useSortedData(dosages)
-	dbsLabs = useSortedData(dbsLabs)
-	leLabs = useSortedData(leLabs)
-	
+	const dosages = useSortedFilteredData(oldDosages)
+	const dbsLabs = useSortedFilteredData(oldDbs)
+	const leLabs = useSortedFilteredData(oldLe)
+
 
 	const chartIdIsOne = selectedChartId === 'lineOne';
 	const chartIdIsTwo = selectedChartId === 'lineTwo';
+	const allDosages = filterChoice === 'all dosages'
 	const symptomsAxisSelected = selectedAxisChoices.includes('Symptoms');
 	const dosagesAxisSelected = selectedAxisChoices.includes('Dosages');
 	const testsAxisSelected = selectedAxisChoices.includes('NT Tests');
-	const selectedDosesValid = selectedDoses.length;
+	const selectedDosesValid = filterChoice === 'specific dosages'
 
 	if (chartIdIsOne && testsAxisSelected && selectedDosesValid) {
 		return lineOneTestsSpecificDosages({
@@ -48,6 +49,7 @@ function useLineData() {
 	}
 
 	if (chartIdIsOne && testsAxisSelected && selectedTest && allDosages) {
+		
 		return lineOneTestsAllDosages({ selectedTest, dbsLabs, leLabs });
 	}
 
@@ -83,7 +85,6 @@ function useLineData() {
 		symptomsAxisSelected &&
 		allDosages
 	) {
-		console.log('works')
 		const { labels, datasets: symptomsDatasets } =
 			lineOneSymptomsAllDosages({ symptoms, dosages, side: 'left' });
 		const { datasets: dosagesDatasets } = lineOneDosagesAllDosages({

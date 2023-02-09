@@ -1,15 +1,15 @@
 declare type TimePeriodState = {
-  allDosages: boolean,
+  filterChoice: string,
   selectedDoses: string[],
   dateRange: {
-    active: boolean,
     start: string,
     end: string
   },
-  specificTimeFrame: string[],
+  specificTimeFrame: string,
+  specificYears: string[],
   dosageRange: {
     [key: string]: any,
-    active: boolean,
+    selectedAminos: string[],
     '5-htp': DosageRangeObject,
     'L-dopa': DosageRangeObject,
     'Tyrosine': DosageRangeObject
@@ -18,7 +18,6 @@ declare type TimePeriodState = {
 
 declare type DosageRangeObject = {
   [key: string]: any,
-  active: boolean,
-  start: number,
-  end: number
+  start: string,
+  end: string
 }

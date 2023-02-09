@@ -3,7 +3,7 @@ import {useSelector} from 'react-redux'
 const aminoAcids = ['5-htp', 'L-dopa', 'Tyrosine']
 const nts = ['dopamine', 'serotonin']
 
-function useSortedData(data: TestsObject[] | DosageObject[]) {
+function useSortedData(data: (TestsObject| DosageObject)[]): (TestsObject | DosageObject)[] {
   const cleanedData = [...data]
   const {direction, entity} = useSelector((state: StateObject) => state.sortedBy)
 
@@ -21,6 +21,8 @@ function useSortedData(data: TestsObject[] | DosageObject[]) {
       return directionIsAsc ? doseOne[entity] - doseTwo[entity] : doseTwo[entity] - doseOne[entity]
     })
   }
+
+  return data
 }
 
 export function useTest() {

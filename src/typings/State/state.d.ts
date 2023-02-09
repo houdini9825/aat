@@ -1,5 +1,5 @@
 declare type StateObject = {
-  symptoms: SymptomsObject,
+  symptoms: SymptomsState,
   chartType: ChartTypeState,
   YAxisChoices: YAxisState,
   patientData: PatientObject,

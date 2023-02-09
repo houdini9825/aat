@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import Form from './components/Form/Form';
 import LineChart from './components/Display/LineChart/LineChart'
-import './App.module.scss'
+import './App.scss'
 
 function App() {
 	return (
