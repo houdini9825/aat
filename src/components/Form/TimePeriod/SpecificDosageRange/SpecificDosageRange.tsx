@@ -5,6 +5,7 @@ import Checkbox from '@mui/material/Checkbox';
 import Select from '@mui/material/Select';
 import { useDispatch, useSelector } from 'react-redux';
 import { updateDosageRange, updateDosageSelection } from '../../../../store';
+import React from 'react';
 
 function DosageRange() {
 	const dispatch = useDispatch();
@@ -19,13 +20,17 @@ function DosageRange() {
 		dispatch(updateDosageSelection(e.target.value));
 	};
 
-  const handleInputChange = (e: any, amino: string, pos: string) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>, amino: string, pos: string) => {
     if (e.target.value === '' || (!isNaN(Number(e.target.value)) && Number(e.target.value) >= 0)) {
       dispatch(updateDosageRange({amino, [pos]: e.target.value}))
     }
   }
 
-  const handleClick = (e: any) => {
+  const handleClick = (e: React.MouseEvent<HTMLInputElement>) => {
+    e.stopPropagation()
+  }
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     e.stopPropagation()
   }
 
@@ -36,9 +41,9 @@ function DosageRange() {
       <label>{amino}</label>
       <div className={styles.inputContainer}>
         <label htmlFor={`dose-range-${amino}-start`}>Start</label>
-        <input value={dosageRange[amino].start} onChange={(e) => handleInputChange(e, amino, 'start')} onClick={handleClick} id={`dose-range-${amino}-start`} type='text'/>
+        <input onKeyDown={handleKeyDown} value={dosageRange[amino].start} onChange={(e) => handleInputChange(e, amino, 'start')} onClick={handleClick} id={`dose-range-${amino}-start`} type='text'/>
         <label htmlFor={`dose-range-${amino}-end`}>End</label>
-        <input value={dosageRange[amino].end} onChange={(e) => handleInputChange(e, amino, 'end')} onClick={handleClick} id={`dose-range-${amino}-end`} type='text'/>
+        <input onKeyDown={handleKeyDown} value={dosageRange[amino].end} onChange={(e) => handleInputChange(e, amino, 'end')} onClick={handleClick} id={`dose-range-${amino}-end`} type='text'/>
       </div>
     </div>
   </MenuItem>

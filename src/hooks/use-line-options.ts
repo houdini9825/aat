@@ -20,11 +20,19 @@ function useLineOptions() {
 
 	const chartIdIsOne = selectedChartId === 'lineOne'
 	const chartIdIsTwo = selectedChartId === 'lineTwo'
+
 	const allDosages = filterChoice === 'all dosages'
+	const selectedDosesValid = filterChoice === 'specific dosages'
+	const filterIsSpecificTimeframe = filterChoice === 'specific timeframe'
+	const filterIsSpecificYears = filterChoice === 'specific years'
+	const filterIsSpecificDateRange = filterChoice === 'specific date range'
+	const filterIsSpecificDosageRange = filterChoice === 'specific dosage range'
+
+	const wideFilterValid = (allDosages || filterIsSpecificTimeframe || filterIsSpecificYears || filterIsSpecificDateRange || filterIsSpecificDosageRange)
+
 	const symptomsAxisSelected = selectedAxisChoices.includes('Symptoms')
 	const dosagesAxisSelected = selectedAxisChoices.includes('Dosages')
 	const testsAxisSelected = selectedAxisChoices.includes('NT Tests')
-	const selectedDosesValid = filterChoice === 'specific dosages'
 
 	if (chartIdIsOne && selectedDosesValid && symptomsAxisSelected) {
 		return lineOneSymptomsSpecificDosages({dosages, selectedDoses})
@@ -35,15 +43,15 @@ function useLineOptions() {
 	}
 
 
-	if (chartIdIsOne && symptomsAxisSelected && allDosages) {
+	if (chartIdIsOne && symptomsAxisSelected && wideFilterValid) {
 		return lineOneSymptomsAllDosages()
 	}
 
-	if (chartIdIsOne && dosagesAxisSelected && allDosages) {
+	if (chartIdIsOne && dosagesAxisSelected && wideFilterValid) {
 		return lineOneDosagesAllDosages()
 	}
 
-	if (chartIdIsTwo && dosagesAxisSelected && symptomsAxisSelected && allDosages) {
+	if (chartIdIsTwo && dosagesAxisSelected && symptomsAxisSelected && wideFilterValid) {
 		return lineTwoDosagesSymptomsAllDosages()
 	}
 

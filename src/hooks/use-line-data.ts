@@ -25,11 +25,20 @@ function useLineData() {
 
 	const chartIdIsOne = selectedChartId === 'lineOne';
 	const chartIdIsTwo = selectedChartId === 'lineTwo';
+
 	const allDosages = filterChoice === 'all dosages'
+	const selectedDosesValid = filterChoice === 'specific dosages'
+	const filterIsSpecificTimeframe = filterChoice === 'specific timeframe'
+	const filterIsSpecificYears = filterChoice === 'specific years'
+	const filterIsSpecificDateRange = filterChoice === 'specific date range'
+	const filterIsSpecificDosageRange = filterChoice === 'specific dosage range'
+
+	const wideFilterValid = (allDosages || filterIsSpecificTimeframe || filterIsSpecificYears || filterIsSpecificDateRange || filterIsSpecificDosageRange)
+
 	const symptomsAxisSelected = selectedAxisChoices.includes('Symptoms');
 	const dosagesAxisSelected = selectedAxisChoices.includes('Dosages');
 	const testsAxisSelected = selectedAxisChoices.includes('NT Tests');
-	const selectedDosesValid = filterChoice === 'specific dosages'
+
 
 	if (chartIdIsOne && testsAxisSelected && selectedDosesValid) {
 		return lineOneTestsSpecificDosages({
@@ -48,16 +57,16 @@ function useLineData() {
 		});
 	}
 
-	if (chartIdIsOne && testsAxisSelected && selectedTest && allDosages) {
+	if (chartIdIsOne && testsAxisSelected && selectedTest && wideFilterValid) {
 		
 		return lineOneTestsAllDosages({ selectedTest, dbsLabs, leLabs });
 	}
 
-	if (chartIdIsOne && symptomsAxisSelected && allDosages) {
+	if (chartIdIsOne && symptomsAxisSelected && wideFilterValid) {
 		return lineOneSymptomsAllDosages({ symptoms, dosages, side: 'left' });
 	}
 
-	if (chartIdIsOne && dosagesAxisSelected && allDosages) {
+	if (chartIdIsOne && dosagesAxisSelected && wideFilterValid) {
 		return lineOneDosagesAllDosages({
 			selectedAminos,
 			dosages,
@@ -83,7 +92,7 @@ function useLineData() {
 		chartIdIsTwo &&
 		dosagesAxisSelected &&
 		symptomsAxisSelected &&
-		allDosages
+		wideFilterValid
 	) {
 		const { labels, datasets: symptomsDatasets } =
 			lineOneSymptomsAllDosages({ symptoms, dosages, side: 'left' });
