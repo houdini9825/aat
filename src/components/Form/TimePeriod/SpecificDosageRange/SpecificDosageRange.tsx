@@ -27,7 +27,6 @@ function DosageRange() {
 
   const handleClick = (e: any) => {
     e.stopPropagation()
-
   }
 
   const renderedOptions = ['5-htp', 'L-dopa', 'Tyrosine'].map(amino => {

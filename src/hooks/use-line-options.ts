@@ -5,6 +5,7 @@ import lineTwoTestsDosages from '../helpers/LineGraph/Options/LineTwoAxes/lineTw
 import lineOneSymptomsAllDosages from '../helpers/LineGraph/Options/LineOneAxis/lineOneSymptomsAllDosages';
 import lineOneDosagesAllDosages from '../helpers/LineGraph/Options/LineOneAxis/lineOneDosagesAllDosages'
 import lineTwoDosagesSymptomsAllDosages from '../helpers/LineGraph/Options/LineTwoAxes/lineTwoDosagesSymptomsAllDosages';
+import useSortedFilteredData from './use-sorted-filtered-data';
 
 function useLineOptions() {
 
@@ -12,8 +13,10 @@ function useLineOptions() {
 		chartType: {selectedChartId},
 		YAxisChoices: {selectedAxisChoices},
 		timePeriod: {filterChoice, selectedDoses},
-		patientData: {dosages},
+		patientData: {dosages: oldDosages},
 		testsList: {selectedTest}} = useSelector((state: StateObject) => state)
+
+	const dosages = useSortedFilteredData(oldDosages)
 
 	const chartIdIsOne = selectedChartId === 'lineOne'
 	const chartIdIsTwo = selectedChartId === 'lineTwo'

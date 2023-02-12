@@ -29,7 +29,7 @@ function lineTwoTestsDosages({
 	});
 
 	testSource.forEach((test) => {
-		labels.push(test.date);
+		labels.push(new Date(test.date).toLocaleDateString());
 		selectedAminos.forEach((amino) => {
 			dosagesObj[amino].push(test[amino]);
 		});

@@ -40,7 +40,7 @@ function useLineData() {
 		});
 	}
 
-	if (chartIdIsOne && selectedDosesValid && symptomsAxisSelected) {
+	if (chartIdIsOne && symptomsAxisSelected && selectedDosesValid) {
 		return lineOneSymptomsSpecificDosages({
 			symptoms,
 			dosages,

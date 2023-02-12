@@ -1,6 +1,6 @@
 declare type TimePeriodState = {
   filterChoice: string,
-  selectedDoses: string[],
+  selectedDoses: number[],
   dateRange: {
     start: string,
     end: string

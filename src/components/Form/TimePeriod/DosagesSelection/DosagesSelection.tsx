@@ -61,7 +61,7 @@ function DosagesSelection() {
 					/>
 					<div>
 						<div>
-							{dose.days[0].date} ~ {dose.days.at(-1).date}
+							{new Date(dose.days[0].date).toLocaleDateString()} ~ {new Date(dose.days.at(-1).date).toLocaleDateString()}
 						</div>
 						<div>5-htp: {dose['5-htp']}mg</div>
 						<div>L-dopa: {dose['L-dopa']}mg</div>

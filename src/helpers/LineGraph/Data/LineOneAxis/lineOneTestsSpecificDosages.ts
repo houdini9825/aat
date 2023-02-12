@@ -7,7 +7,7 @@ function lineOneTestsSpecificDosages({
 	leLabs,
 }: {
 	selectedTest: string,
-  selectedDoses: string[],
+  selectedDoses: number[],
   dbsLabs: any[],
   leLabs: any[]
 }) {

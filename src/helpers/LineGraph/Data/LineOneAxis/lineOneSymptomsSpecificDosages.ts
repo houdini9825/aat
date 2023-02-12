@@ -6,7 +6,7 @@ function lineOneSymptomsSpecificDosages({
 	symptoms,
 }: {
 	dosages: any[],
-  selectedDoses: string[],
+  selectedDoses: number[],
   symptoms: string[]
 }) {
 	const selectedDosages = dosages

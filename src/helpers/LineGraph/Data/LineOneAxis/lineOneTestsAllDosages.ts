@@ -24,7 +24,7 @@ function lineOneTestsAllDosages({
 	const dosagesList: string[][] = [];
 
 	testSource.forEach((test) => {
-		labels.push(test.date);
+		labels.push(new Date(test.date).toLocaleDateString());
 		dosagesList.push([
 			`5-htp: ${test['5-htp']}mg`,
 			`L-dopa: ${test['L-dopa']}mg`,

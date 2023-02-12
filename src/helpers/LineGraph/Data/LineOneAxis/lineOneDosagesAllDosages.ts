@@ -19,7 +19,7 @@ function lineOneDosagesAllDosages({
 
 	dosages.forEach((dose) => {
 		dose.days.forEach((day: {date: string}) => {
-			labels.push(day.date);
+			labels.push(new Date(day.date).toLocaleDateString())
 			selectedAminos.forEach((opt) => {
 				dosagesObj[opt].push(dose[opt]);
 			});

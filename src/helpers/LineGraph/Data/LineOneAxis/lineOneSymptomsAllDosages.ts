@@ -21,7 +21,7 @@ function lineOneSymptomsAllDosages({
 
 	dosages.forEach((dose) => {
 		dose.days.forEach((day: {date: string, symptomLogs: any[], dayNumber: number}) => {
-			labels.push(day.date);
+			labels.push(new Date(day.date).toLocaleDateString());
 			symptoms.forEach((symp) => {
 				selectedSymptomsObject[symp].push(
 					day.symptomLogs[0].symptoms[symp]

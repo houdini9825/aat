@@ -6,7 +6,7 @@ function lineOneSymptomsSpecificDosages({
 	selectedDoses,
 }: {
 	dosages: any[],
-	selectedDoses: string[]
+	selectedDoses: number[]
 }) {
 	const selectedDosages = dosages
 		.filter((dose) => selectedDoses.includes(dose.dosageNumber))
