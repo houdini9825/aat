@@ -11,7 +11,7 @@ function lineOneTestsSpecificDosages({
 }) {
 	let testData = selectedTest === 'DBS Labs' ? dbsLabs : leLabs;
 
-	const labels = testData.map((test) => test.date);
+	const labels = testData.map((test) => new Date(test.date).toLocaleDateString());
 
   type dataObject = {
     [key: string]: number[],
@@ -40,7 +40,7 @@ function lineOneTestsSpecificDosages({
 				data: dataObj[nt],
 				yAxisID: 'left',
 				dosagesList,
-				point: true,
+				point: testData.length === 1,
 			})
 		);
 	}

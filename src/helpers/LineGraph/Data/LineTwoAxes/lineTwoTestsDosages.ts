@@ -45,7 +45,7 @@ function lineTwoTestsDosages({
 				label: nt,
 				data: ntObj[nt],
 				yAxisID: 'left',
-        point: true,
+        point: testSource.length === 1,
         dosagesList: undefined
 			})
 		);
@@ -57,7 +57,7 @@ function lineTwoTestsDosages({
 				label: amino,
 				data: dosagesObj[amino],
 				yAxisID: 'right',
-        point: true,
+        point: testSource.length === 1,
 			})
 		);
 	}

@@ -7,10 +7,9 @@ function lineOneSymptomsSpecificDosages({
 	dosages: any[],
   symptoms: string[]
 }) {
-	const selectedDosages = dosages.reverse()
 
 	const labels = Array(
-		selectedDosages.reduce(
+		dosages.reduce(
 			(start, dose) => Math.max(dose.days.length, start),
 			0
 		)
@@ -20,7 +19,7 @@ function lineOneSymptomsSpecificDosages({
 
 	const datasets: any = [];
 
-	selectedDosages.forEach((dose) => {
+	dosages.forEach((dose) => {
 		symptoms.forEach((symp) => {
 			const data: number[] = [];
 			dose.days.forEach((day: {symptomLogs: any[]}) => {

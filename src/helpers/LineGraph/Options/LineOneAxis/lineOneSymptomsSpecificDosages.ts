@@ -3,16 +3,11 @@ import generateScale from '../generateScale';
 
 function lineOneSymptomsSpecificDosages({
 	dosages,
-	selectedDoses,
 }: {
 	dosages: any[],
-	selectedDoses: string[]
 }) {
-	const selectedDosages = dosages
-		.filter((dose) => selectedDoses.includes(dose.dosageNumber))
-		.reverse();
 
-	const titleText = selectedDosages.map((dose) => {
+	const titleText = dosages.map((dose) => {
 		return `${dose.dosageNumber}. 5-htp: ${dose['5-htp']}mg - L-dopa: ${dose['L-dopa']}mg - Tyrosine: ${dose['Tyrosine']}mg`;
 	});
 

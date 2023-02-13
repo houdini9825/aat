@@ -35,7 +35,7 @@ function useLineOptions() {
 	const testsAxisSelected = selectedAxisChoices.includes('NT Tests')
 
 	if (chartIdIsOne && selectedDosesValid && symptomsAxisSelected) {
-		return lineOneSymptomsSpecificDosages({dosages, selectedDoses})
+		return lineOneSymptomsSpecificDosages({dosages})
 	}
 
 	if (chartIdIsOne && testsAxisSelected) {
