@@ -51,7 +51,7 @@ function useLineOptions() {
 		return lineOneDosagesAllDosages()
 	}
 
-	if (chartIdIsTwo && dosagesAxisSelected && symptomsAxisSelected && wideFilterValid) {
+	if (chartIdIsTwo && dosagesAxisSelected && symptomsAxisSelected) {
 		return lineTwoDosagesSymptomsAllDosages()
 	}
 

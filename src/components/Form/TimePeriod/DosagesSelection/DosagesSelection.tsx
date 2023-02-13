@@ -47,17 +47,15 @@ function DosagesSelection() {
 	let renderedDosageOptions;
 
 	if (
-		selectedAxisChoices === 'Symptoms' ||
-		(selectedAxisChoices.length === 1 &&
-			selectedAxisChoices[0] === 'Symptoms')
+		selectedAxisChoices.includes('Symptoms')
 	) {
 		renderedDosageOptions = dosages.map((dose, i, arr) => {
 			dose = arr[arr.length - 1 - i];
 			return (
-				<MenuItem key={dose.dosageNumber} value={dose.dosageNumber}>
+				<MenuItem key={dose.dosageNumber} value={String(dose.dosageNumber)}>
 					<div>{dose.dosageNumber}.</div>
 					<Checkbox
-						checked={selectedDoses.includes(dose.dosageNumber)}
+						checked={selectedDoses.includes(String(dose.dosageNumber))}
 					/>
 					<div>
 						<div>
@@ -73,9 +71,7 @@ function DosagesSelection() {
 	}
 
 	if (
-		selectedAxisChoices === 'NT Tests' ||
-		(selectedAxisChoices.length === 1 &&
-			selectedAxisChoices[0] === 'NT Tests')
+		selectedAxisChoices.includes('NT Tests')
 	) {
 		const selectedLab = selectedTest === 'DBS Labs' ? dbsLabs : leLabs;
 		renderedDosageOptions = [...selectedLab].reverse().map((dose) => {
@@ -83,7 +79,7 @@ function DosagesSelection() {
 				<MenuItem key={dose.date} value={dose.date}>
 					<Checkbox checked={selectedDoses.includes(dose.date)} />
 					<div>
-						<div>{dose.date}</div>
+						<div>{new Date(dose.date).toLocaleDateString()}</div>
 						<div>5-htp: {dose['5-htp']}mg</div>
 						<div>L-dopa: {dose['L-dopa']}mg</div>
 						<div>Tyrosine: {dose['Tyrosine']}mg</div>
@@ -92,6 +88,7 @@ function DosagesSelection() {
 			);
 		});
 	}
+
 
 	return (
 		<div className={styles.container}>
@@ -103,7 +100,7 @@ function DosagesSelection() {
 				id="time-selected-dosages"
 				value={selectedDoses}
 				renderValue={(selected) => {
-					return selected.join(', ');
+					return selected.map(s => String(s).split('T')[0]).join(', ');
 				}}
 				label="Dosages"
 				onChange={handleChange}

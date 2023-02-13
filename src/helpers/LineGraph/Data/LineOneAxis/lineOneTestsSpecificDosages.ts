@@ -2,20 +2,14 @@ import generateDataset from '../generateDataset';
 
 function lineOneTestsSpecificDosages({
 	selectedTest,
-	selectedDoses,
 	dbsLabs,
 	leLabs,
 }: {
 	selectedTest: string,
-  selectedDoses: number[],
   dbsLabs: any[],
   leLabs: any[]
 }) {
 	let testData = selectedTest === 'DBS Labs' ? dbsLabs : leLabs;
-
-	testData = [...testData].filter((test) =>
-		selectedDoses.includes(test.date)
-	);
 
 	const labels = testData.map((test) => test.date);
 

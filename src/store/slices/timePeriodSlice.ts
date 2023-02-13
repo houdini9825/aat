@@ -65,7 +65,7 @@ const timePeriodSlice = createSlice({
       state.filterChoice = action.payload
     },
     updateSelectedDoses(state, action) {
-      state.selectedDoses = action.payload.map((num: string) => Number(num))
+      state.selectedDoses = action.payload.map((num: any) => String(num))
     },
     updateSpecificTimeFrame(state, action) {
       state.specificTimeFrame = action.payload

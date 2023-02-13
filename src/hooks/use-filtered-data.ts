@@ -1,6 +1,6 @@
 import {FilterTestsByDate, FilterDosagesByDate} from '../helpers/Filters/FilterByDate'
 import FilterByDosageAmount from '../helpers/Filters/FilterByDosageAmount'
-import FilterBySpecificDosage from '../helpers/Filters/FilterBySpecificDosage'
+import {FilterBySpecificDosage, FilterBySpecificTest} from '../helpers/Filters/FilterBySpecificDosage'
 import {FilterDosagesByYears, FilterTestsByYears} from '../helpers/Filters/FilterByYears'
 import {useSelector} from 'react-redux'
 
@@ -31,7 +31,7 @@ function useFilteredData(data: (TestsObject | DosageObject)[]): (TestsObject | D
   const dataIsTests = isTestsObjectArray(data)
 
   if (filterChoiceIsSpecificDosages) {
-    if (dataIsTests) return data
+    if (dataIsTests) return FilterBySpecificTest(data as TestsObject[], selectedDoses)
 
     return FilterBySpecificDosage(data as DosageObject[], selectedDoses)
   }

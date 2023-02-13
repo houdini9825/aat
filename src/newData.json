@@ -2,7 +2,6 @@
 	"patients": [
 		{
 			"patientId": 1,
-			"dob": "7-22-95",
 			"allSymptoms": [
 				"overall",
 				"cognition",

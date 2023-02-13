@@ -2,18 +2,12 @@ import generateDataset from '../generateDataset';
 
 function lineOneSymptomsSpecificDosages({
 	dosages,
-	selectedDoses,
 	symptoms,
 }: {
 	dosages: any[],
-  selectedDoses: number[],
   symptoms: string[]
 }) {
-	const selectedDosages = dosages
-		.filter((dose) => {
-			return selectedDoses.includes(dose.dosageNumber);
-		})
-		.reverse();
+	const selectedDosages = dosages.reverse()
 
 	const labels = Array(
 		selectedDosages.reduce(

@@ -43,7 +43,6 @@ function useLineData() {
 	if (chartIdIsOne && testsAxisSelected && selectedDosesValid) {
 		return lineOneTestsSpecificDosages({
 			selectedTest,
-			selectedDoses,
 			dbsLabs,
 			leLabs,
 		});
@@ -53,7 +52,6 @@ function useLineData() {
 		return lineOneSymptomsSpecificDosages({
 			symptoms,
 			dosages,
-			selectedDoses,
 		});
 	}
 
@@ -77,8 +75,7 @@ function useLineData() {
 	if (
 		chartIdIsTwo &&
 		testsAxisSelected &&
-		dosagesAxisSelected &&
-		selectedTest
+		dosagesAxisSelected
 	) {
 		return lineTwoTestsDosages({
 			selectedAminos,
@@ -91,8 +88,7 @@ function useLineData() {
 	if (
 		chartIdIsTwo &&
 		dosagesAxisSelected &&
-		symptomsAxisSelected &&
-		wideFilterValid
+		symptomsAxisSelected
 	) {
 		const { labels, datasets: symptomsDatasets } =
 			lineOneSymptomsAllDosages({ symptoms, dosages, side: 'left' });
@@ -101,6 +97,7 @@ function useLineData() {
 			dosages,
 			side: 'right',
 		});
+
 
 		return {
 			labels,

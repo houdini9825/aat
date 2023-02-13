@@ -6,7 +6,7 @@ function lineOneSymptomsSpecificDosages({
 	selectedDoses,
 }: {
 	dosages: any[],
-	selectedDoses: number[]
+	selectedDoses: string[]
 }) {
 	const selectedDosages = dosages
 		.filter((dose) => selectedDoses.includes(dose.dosageNumber))
@@ -29,6 +29,11 @@ function lineOneSymptomsSpecificDosages({
 				maxRotation: 0,
 				font: { size: 10 },
 			},
+			title : {
+				text: 'Day Number',
+				display: true,
+				padding: 10
+			}
 		},
 	};
 

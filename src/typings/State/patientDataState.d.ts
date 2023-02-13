@@ -1,6 +1,5 @@
 declare type PatientObject = {
   patientId: number,
-  dob: string,
   allSymptoms: string[],
   dbsLabs: TestsObject[],
   leLabs: TestsObject[],
