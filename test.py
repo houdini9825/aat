@@ -1,25 +1,45 @@
-import json, datetime
+import pyperclip, datetime, json
+
+dosage = {
+  "dosageNumber": 285,
+  "5-htp": 2100,
+  "L-dopa": 840,
+  "Tyrosine": 9500,
+  "days": []
+}
+
+obj = {
+  "date": "2023-02-02T00:00:00",
+  "dayNumber": 1,
+  "symptomLogs": [
+    {
+      "time": "8:00",
+      "symptoms": {
+        "overall": 2.5,
+        "cognition": 2.5,
+        "depression": 2.5,
+        "fatigue": 3.25,
+        "bs": 2.5,
+        "headache": 1,
+        "unwellness": 0.5,
+        "nausea": 0
+      }
+    }
+  ]
+}
 
 
-data = None
+day = datetime.timedelta(1)
 
-with open('test.json', 'r') as f:
-  data = json.load(f)
-
-
-for test in data['patients'][0]['leLabs']:
-  date_info = test['date'].split('-')
-  test['date'] = datetime.datetime(int('20'+date_info[-1]), int(date_info[0]), int(date_info[1])).isoformat()
-for test in data['patients'][0]['dbsLabs']:
-  date_info = test['date'].split('-')
-  test['date'] = datetime.datetime(int('20'+date_info[-1]), int(date_info[0]), int(date_info[1])).isoformat()
-
-for test in data['patients'][0]['dosages']:
-  for day in test['days']:
-    date_info = day['date'].split('-')
-    day['date'] = datetime.datetime(int('20'+date_info[-1]), int(date_info[0]), int(date_info[1])).isoformat()
+prev = obj
 
 
+for i in range(14):
+  dosage['days'].append(prev)
+  copy = prev.copy()
+  dateSplit = [int(x) for x in copy['date'].split('T')[0].split('-')]
+  copy['date'] = (datetime.datetime(dateSplit[0], dateSplit[1], dateSplit[2]) + day).isoformat()
+  copy['dayNumber'] += 1
+  prev = copy
 
-with open('newData.json', 'w') as f:
-  f.write(json.dumps(data))
+pyperclip.copy(json.dumps(dosage))
