@@ -9,7 +9,6 @@ function lineOneSymptomsAllDosages({
   dosages: any[],
   side: string
 }) {
-	console.log(dosages)
 	const labels: string[] = [];
 
 	const selectedSymptomsObject: any = {};
