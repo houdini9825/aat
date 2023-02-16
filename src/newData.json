@@ -78654,7 +78654,7 @@
 										"depression": 2.5,
 										"fatigue": 3.25,
 										"bs": 2.5,
-										"headache": 1,
+										"headache": 0.5,
 										"unwellness": 0.5,
 										"nausea": 0
 									}
@@ -78668,12 +78668,12 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 2.5,
-										"cognition": 2.5,
-										"depression": 2.5,
-										"fatigue": 3.25,
-										"bs": 2.5,
-										"headache": 1,
+										"overall": 3,
+										"cognition": 3,
+										"depression": 3,
+										"fatigue": 3.5,
+										"bs": 3,
+										"headache": 0.5,
 										"unwellness": 0.5,
 										"nausea": 0
 									}
@@ -78690,9 +78690,9 @@
 										"overall": 2.5,
 										"cognition": 2.5,
 										"depression": 2.5,
-										"fatigue": 3.25,
-										"bs": 2.5,
-										"headache": 1,
+										"fatigue": 3.5,
+										"bs": 3,
+										"headache": 0.5,
 										"unwellness": 0.5,
 										"nausea": 0
 									}

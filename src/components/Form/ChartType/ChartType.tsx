@@ -23,7 +23,7 @@ function ChartType() {
 		dispatch(changeSelectedType({ name: e.target.value, id }));
 	};
 
-	const renderedOptions = chartOptions.map((opt) => {
+	const renderedOptions = chartOptions.slice(0,2).map((opt) => {
 		return (
 			<MenuItem key={opt.id} value={opt.name}>
 				{opt.name}
