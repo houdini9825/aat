@@ -334,6 +334,14 @@
 					"Tyrosine": 6750,
 					"serotonin": 5090,
 					"dopamine": 1500
+				},
+				{
+					"date": "2023-04-18T00:00:00",
+					"5-htp": 1500,
+					"L-dopa": 1200,
+					"Tyrosine": 7000,
+					"serotonin": 11000,
+					"dopamine": 1290
 				}
 			],
 			"dosages": [
@@ -72138,10 +72146,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.0,
-										"cognition": 3.0,
-										"depression": 3.0,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72157,10 +72165,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.0,
-										"cognition": 3.0,
-										"depression": 3.0,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72176,10 +72184,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.0,
-										"cognition": 3.0,
-										"depression": 3.0,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72195,10 +72203,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.0,
-										"cognition": 3.0,
-										"depression": 3.0,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72214,10 +72222,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.0,
-										"cognition": 3.0,
-										"depression": 3.0,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72233,10 +72241,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.0,
-										"cognition": 3.0,
-										"depression": 3.0,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72252,10 +72260,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.0,
-										"cognition": 3.0,
-										"depression": 3.0,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72271,10 +72279,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.0,
-										"cognition": 3.0,
-										"depression": 3.0,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72290,10 +72298,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.0,
-										"cognition": 3.0,
-										"depression": 3.0,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72309,10 +72317,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.0,
-										"cognition": 3.0,
-										"depression": 3.0,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72328,10 +72336,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.0,
-										"cognition": 3.0,
-										"depression": 3.0,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72347,10 +72355,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.0,
-										"cognition": 3.0,
-										"depression": 3.0,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72366,10 +72374,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.0,
-										"cognition": 3.0,
-										"depression": 3.0,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72385,10 +72393,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.0,
-										"cognition": 3.0,
-										"depression": 3.0,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72412,10 +72420,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.5,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.5,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72431,10 +72439,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.5,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.5,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72450,10 +72458,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.5,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.5,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72469,10 +72477,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.5,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.5,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72488,10 +72496,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.5,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.5,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72507,10 +72515,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.5,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.5,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72526,10 +72534,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.5,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.5,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72545,10 +72553,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.5,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.5,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72564,10 +72572,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.5,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.5,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72583,10 +72591,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.5,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.5,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72602,10 +72610,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.5,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.5,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72621,10 +72629,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.5,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.5,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72640,10 +72648,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.5,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.5,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72659,10 +72667,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.5,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.5,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72686,10 +72694,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72705,10 +72713,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72724,10 +72732,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72743,10 +72751,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72762,10 +72770,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72781,10 +72789,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72800,10 +72808,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72819,10 +72827,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72838,10 +72846,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72857,10 +72865,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72876,10 +72884,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72895,10 +72903,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72914,10 +72922,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -72933,10 +72941,10 @@
 								{
 									"time": "8:00",
 									"symptoms": {
-										"overall": 3.5,
-										"cognition": 3.5,
-										"depression": 3.5,
-										"fatigue": 3.0,
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
 										"bs": 3.0,
 										"headache": 2.0,
 										"unwellness": 1.0,
@@ -79375,6 +79383,657 @@
 										"bs": 3,
 										"headache": 1,
 										"unwellness": 1.5,
+										"nausea": 0
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"dosageNumber": 289,
+					"5-htp": 2100,
+					"L-dopa": 1200,
+					"Tyrosine": 9000,
+					"days": [
+						{
+							"date": "2023-03-23T00:00:00",
+							"dayNumber": 1,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 3,
+										"cognition": 3,
+										"depression": 3,
+										"fatigue": 3.5,
+										"bs": 3,
+										"headache": 2,
+										"unwellness": 3,
+										"nausea": 1
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-03-24T00:00:00",
+							"dayNumber": 2,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 3,
+										"cognition": 3,
+										"depression": 3,
+										"fatigue": 3.5,
+										"bs": 3,
+										"headache": 2,
+										"unwellness": 3.5,
+										"nausea": 1
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-03-25T00:00:00",
+							"dayNumber": 3,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 3.5,
+										"cognition": 3.5,
+										"depression": 3,
+										"fatigue": 3.5,
+										"bs": 3,
+										"headache": 2,
+										"unwellness": 4,
+										"nausea": 2
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-03-26T00:00:00",
+							"dayNumber": 4,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 3.5,
+										"cognition": 3,
+										"depression": 3,
+										"fatigue": 3.5,
+										"bs": 3,
+										"headache": 2,
+										"unwellness": 4,
+										"nausea": 1
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-03-27T00:00:00",
+							"dayNumber": 5,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 4,
+										"cognition": 3,
+										"depression": 3,
+										"fatigue": 3.5,
+										"bs": 3.5,
+										"headache": 3,
+										"unwellness": 5,
+										"nausea": 1
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-03-28T00:00:00",
+							"dayNumber": 6,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 3,
+										"cognition": 3,
+										"depression": 2.5,
+										"fatigue": 3,
+										"bs": 3,
+										"headache": 2,
+										"unwellness": 3,
+										"nausea": 1
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-03-29T00:00:00",
+							"dayNumber": 7,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 2.5,
+										"cognition": 3,
+										"depression": 2.5,
+										"fatigue": 2.5,
+										"bs": 3,
+										"headache": 1,
+										"unwellness": 2,
+										"nausea": 0
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-03-30T00:00:00",
+							"dayNumber": 8,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 3,
+										"bs": 3,
+										"headache": 1,
+										"unwellness": 2.5,
+										"nausea": 0
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-03-31T00:00:00",
+							"dayNumber": 9,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 3,
+										"cognition": 3,
+										"depression": 3,
+										"fatigue": 3.5,
+										"bs": 3,
+										"headache": 1,
+										"unwellness": 3,
+										"nausea": 0
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-04-01T00:00:00",
+							"dayNumber": 10,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 3.5,
+										"cognition": 3,
+										"depression": 3,
+										"fatigue": 3.5,
+										"bs": 4,
+										"headache": 2,
+										"unwellness": 4,
+										"nausea": 0
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-04-02T00:00:00",
+							"dayNumber": 11,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 4,
+										"cognition": 3.5,
+										"depression": 3,
+										"fatigue": 3.5,
+										"bs": 4,
+										"headache": 3,
+										"unwellness": 5,
+										"nausea": 2
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-04-03T00:00:00",
+							"dayNumber": 12,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 4,
+										"cognition": 3,
+										"depression": 3,
+										"fatigue": 3.5,
+										"bs": 3.5,
+										"headache": 2,
+										"unwellness": 4.5,
+										"nausea": 0
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-04-04T00:00:00",
+							"dayNumber": 13,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 4,
+										"cognition": 3,
+										"depression": 3,
+										"fatigue": 3.5,
+										"bs": 3,
+										"headache": 3,
+										"unwellness": 5,
+										"nausea": 1
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-04-05T00:00:00",
+							"dayNumber": 14,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 3.5,
+										"cognition": 3,
+										"depression": 3,
+										"fatigue": 3.5,
+										"bs": 3.5,
+										"headache": 2,
+										"unwellness": 4,
+										"nausea": 1
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"dosageNumber": 290,
+					"5-htp": 1800,
+					"L-dopa": 1200,
+					"Tyrosine": 8000,
+					"days": [
+						{
+							"date": "2023-04-06T00:00:00",
+							"dayNumber": 1,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 3.5,
+										"cognition": 3,
+										"depression": 3,
+										"fatigue": 3.5,
+										"bs": 3,
+										"headache": 2,
+										"unwellness": 4,
+										"nausea": 0
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-04-07T00:00:00",
+							"dayNumber": 2,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 3.5,
+										"cognition": 3,
+										"depression": 3,
+										"fatigue": 3.5,
+										"bs": 3,
+										"headache": 1,
+										"unwellness": 3,
+										"nausea": 1
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-04-08T00:00:00",
+							"dayNumber": 3,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 3,
+										"cognition": 3,
+										"depression": 3,
+										"fatigue": 4,
+										"bs": 3,
+										"headache": 2,
+										"unwellness": 2,
+										"nausea": 1
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-04-09T00:00:00",
+							"dayNumber": 4,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 3.5,
+										"cognition": 3,
+										"depression": 3,
+										"fatigue": 3.5,
+										"bs": 3,
+										"headache": 2,
+										"unwellness": 3.5,
+										"nausea": 0
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-04-10T00:00:00",
+							"dayNumber": 5,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 3.5,
+										"cognition": 3,
+										"depression": 3,
+										"fatigue": 4,
+										"bs": 3.5,
+										"headache": 1.5,
+										"unwellness": 4,
+										"nausea": 1
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-04-11T00:00:00",
+							"dayNumber": 6,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 3.5,
+										"cognition": 3,
+										"depression": 3,
+										"fatigue": 3.5,
+										"bs": 3,
+										"headache": 2,
+										"unwellness": 3,
+										"nausea": 1
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"dosageNumber": 291,
+					"5-htp": 1500,
+					"L-dopa": 1200,
+					"Tyrosine": 7000,
+					"days": [
+						{
+							"date": "2023-04-12T00:00:00",
+							"dayNumber": 1,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 3.5,
+										"cognition": 3,
+										"depression": 3,
+										"fatigue": 3.5,
+										"bs": 3,
+										"headache": 2,
+										"unwellness": 3,
+										"nausea": 1
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-04-13T00:00:00",
+							"dayNumber": 2,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 3,
+										"cognition": 3,
+										"depression": 3,
+										"fatigue": 3,
+										"bs": 2,
+										"headache": 1,
+										"unwellness": 1,
+										"nausea": 0
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-04-14T00:00:00",
+							"dayNumber": 3,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 3,
+										"bs": 2.5,
+										"headache": 0.5,
+										"unwellness": 1,
+										"nausea": 0
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-04-15T00:00:00",
+							"dayNumber": 4,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 3,
+										"bs": 3,
+										"headache": 1,
+										"unwellness": 1,
+										"nausea": 0
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-04-16T00:00:00",
+							"dayNumber": 5,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 3,
+										"bs": 2.5,
+										"headache": 0.5,
+										"unwellness": 0.5,
+										"nausea": 0
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-04-17T00:00:00",
+							"dayNumber": 6,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 3,
+										"cognition": 3,
+										"depression": 2.5,
+										"fatigue": 3,
+										"bs": 3,
+										"headache": 2,
+										"unwellness": 0.5,
+										"nausea": 0
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-04-18T00:00:00",
+							"dayNumber": 7,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
+										"bs": 3,
+										"headache": 1,
+										"unwellness": 1,
+										"nausea": 0
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-04-19T00:00:00",
+							"dayNumber": 8,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 2,
+										"cognition": 2,
+										"depression": 2,
+										"fatigue": 2,
+										"bs": 2,
+										"headache": 1,
+										"unwellness": 0.5,
+										"nausea": 0
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-04-20T00:00:00",
+							"dayNumber": 9,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 3,
+										"bs": 2.5,
+										"headache": 0.5,
+										"unwellness": 0,
+										"nausea": 0
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-04-21T00:00:00",
+							"dayNumber": 10,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 2,
+										"cognition": 2.5,
+										"depression": 2,
+										"fatigue": 2,
+										"bs": 2.5,
+										"headache": 0.5,
+										"unwellness": 0,
+										"nausea": 0
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-04-22T00:00:00",
+							"dayNumber": 11,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
+										"bs": 2.5,
+										"headache": 1,
+										"unwellness": 1,
+										"nausea": 0
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-04-23T00:00:00",
+							"dayNumber": 12,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 2.5,
+										"cognition": 3,
+										"depression": 3,
+										"fatigue": 3,
+										"bs": 3,
+										"headache": 2,
+										"unwellness": 1.5,
+										"nausea": 0
+									}
+								}
+							]
+						},
+						{
+							"date": "2023-04-24T00:00:00",
+							"dayNumber": 13,
+							"symptomLogs": [
+								{
+									"time": "8:00",
+									"symptoms": {
+										"overall": 2.5,
+										"cognition": 2.5,
+										"depression": 2.5,
+										"fatigue": 2.5,
+										"bs": 2,
+										"headache": 1,
+										"unwellness": 0.5,
 										"nausea": 0
 									}
 								}
