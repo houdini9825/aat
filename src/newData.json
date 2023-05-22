@@ -80418,7 +80418,7 @@
 										"fatigue": 3,
 										"bs": 3,
 										"headache": 2,
-										"unwellness": 0,
+										"unwellness": 2,
 										"nausea": 0
 									}
 								}
@@ -80437,7 +80437,7 @@
 										"fatigue": 3,
 										"bs": 3,
 										"headache": 1,
-										"unwellness": 0,
+										"unwellness": 1,
 										"nausea": 0
 									}
 								}
