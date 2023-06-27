@@ -29,7 +29,6 @@ export function useTest() {
   const patientData = useSelector((state: any) => state.patientData)
   const newData = useSortedData(patientData.dosages)
 
-  console.log(newData)
 }
 
 
