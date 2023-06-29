@@ -38,7 +38,7 @@ export default function BasicTable({data}: any) {
               <TableCell align="center">{row['L-dopa']}</TableCell>
               <TableCell align="center">{row['Tyrosine']}</TableCell>
             </TableRow>
-          ))}
+          )).reverse()}
         </TableBody>
       </Table>
     </TableContainer>
