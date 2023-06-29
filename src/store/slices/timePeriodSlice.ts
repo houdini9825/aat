@@ -88,12 +88,13 @@ const timePeriodSlice = createSlice({
     updateDosageSelection(state, action) {
       state.dosageRange.selectedAminos = action.payload
     }
-  },
-  extraReducers: (builder) => {
-    builder.addMatcher(matchExternalActions, (state, action) => {
-      cleanState(state)
-    })
   }
+  // },
+  // extraReducers: (builder) => {
+  //   builder.addMatcher(matchExternalActions, (state, action) => {
+  //     cleanState(state)
+  //   })
+  // }
 })
 
 export const {changeFilterChoice, updateSelectedDoses, updateSpecificTimeFrame, updateDosageRange, updateSpecificYears, updateDateRange, updateDosageSelection} = timePeriodSlice.actions

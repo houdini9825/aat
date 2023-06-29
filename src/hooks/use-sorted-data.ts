@@ -18,7 +18,11 @@ function useSortedData(data: (TestsObject| DosageObject)[]): (TestsObject | Dosa
 
   if (aminoAcids.includes(entity) || nts.includes(entity)) {
     return cleanedData.sort((doseOne, doseTwo) => {
-      return directionIsAsc ? doseOne[entity] - doseTwo[entity] : doseTwo[entity] - doseOne[entity]
+      const doseOneTotSum = doseOne['5-htp'] + doseOne['L-dopa']
+      const doseTwoTotSum = doseTwo['5-htp'] + doseTwo['L-dopa']
+      const ascDifference = doseOne[entity] - doseTwo[entity]
+      const val = directionIsAsc ? (ascDifference ? ascDifference : doseOneTotSum - doseTwoTotSum) : (-ascDifference ? -ascDifference : doseTwoTotSum - doseOneTotSum)
+      return val
     })
   }
 

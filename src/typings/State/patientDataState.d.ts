@@ -3,7 +3,8 @@ declare type PatientObject = {
   allSymptoms: string[],
   dbsLabs: TestsObject[],
   leLabs: TestsObject[],
-  dosages: DosageObject[]
+  dosages: DosageObject[],
+	p2LeLabs: TestsObject[]
 }
 
 declare type TestsObject = {

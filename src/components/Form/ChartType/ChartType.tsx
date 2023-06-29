@@ -9,7 +9,8 @@ import { changeSelectedType } from '../../../store';
 const chartOptions = [
 	{ id: 'lineOne', name: 'Line Graph 1 Axis' },
 	{ id: 'lineTwo', name: 'Line Graph 2 Axes' },
-	{ id: 'table', name: 'Table' },
+	{ id: 'tableOne', name: 'Table One' },
+	{id: 'tableTwo', name: 'Table Two'}
 ];
 
 function ChartType() {
@@ -23,7 +24,7 @@ function ChartType() {
 		dispatch(changeSelectedType({ name: e.target.value, id }));
 	};
 
-	const renderedOptions = chartOptions.slice(0,2).map((opt) => {
+	const renderedOptions = chartOptions.map((opt) => {
 		return (
 			<MenuItem key={opt.id} value={opt.name}>
 				{opt.name}
