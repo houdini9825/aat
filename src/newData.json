@@ -78561,7 +78561,7 @@
 										"fatigue": 3.5,
 										"bs": 3,
 										"headache": 2,
-										"unwellness": 3.5,
+										"unwellness": 2,
 										"nausea": 0
 									}
 								}
@@ -78835,7 +78835,7 @@
 										"fatigue": 3.5,
 										"bs": 3,
 										"headache": 2,
-										"unwellness": 3.5,
+										"unwellness": 2,
 										"nausea": 1
 									}
 								}
@@ -78892,7 +78892,7 @@
 										"fatigue": 2.5,
 										"bs": 3,
 										"headache": 0.5,
-										"unwellness": 1,
+										"unwellness": 0.5,
 										"nausea": 0
 									}
 								}
@@ -78911,7 +78911,7 @@
 										"fatigue": 3.5,
 										"bs": 3,
 										"headache": 1,
-										"unwellness": 1,
+										"unwellness": 0.5,
 										"nausea": 0
 									}
 								}
@@ -78987,7 +78987,7 @@
 										"fatigue": 3.25,
 										"bs": 2.5,
 										"headache": 1,
-										"unwellness": 1,
+										"unwellness": 0.5,
 										"nausea": 0
 									}
 								}
@@ -79006,7 +79006,7 @@
 										"fatigue": 3.5,
 										"bs": 3,
 										"headache": 1,
-										"unwellness": 1,
+										"unwellness": 0.5,
 										"nausea": 0
 									}
 								}
@@ -79025,7 +79025,7 @@
 										"fatigue": 3.5,
 										"bs": 3,
 										"headache": 1,
-										"unwellness": 1.5,
+										"unwellness": 1,
 										"nausea": 0
 									}
 								}
@@ -79063,7 +79063,7 @@
 										"fatigue": 3.5,
 										"bs": 3,
 										"headache": 0.5,
-										"unwellness": 3,
+										"unwellness": 2,
 										"nausea": 0
 									}
 								}
@@ -79101,7 +79101,7 @@
 										"fatigue": 3.5,
 										"bs": 3,
 										"headache": 0.5,
-										"unwellness": 2,
+										"unwellness": 1,
 										"nausea": 0
 									}
 								}
@@ -79185,7 +79185,7 @@
 										"fatigue": 3.5,
 										"bs": 3,
 										"headache": 2,
-										"unwellness": 3,
+										"unwellness": 2,
 										"nausea": 1
 									}
 								}
@@ -79223,7 +79223,7 @@
 										"fatigue": 3,
 										"bs": 3,
 										"headache": 1.5,
-										"unwellness": 1.5,
+										"unwellness": 1,
 										"nausea": 0
 									}
 								}
@@ -79242,7 +79242,7 @@
 										"fatigue": 2.5,
 										"bs": 3,
 										"headache": 0.5,
-										"unwellness": 1.5,
+										"unwellness": 1,
 										"nausea": 0
 									}
 								}
@@ -79280,7 +79280,7 @@
 										"fatigue": 3.5,
 										"bs": 2.5,
 										"headache": 1,
-										"unwellness": 2,
+										"unwellness": 1,
 										"nausea": 0
 									}
 								}
@@ -79299,7 +79299,7 @@
 										"fatigue": 3.5,
 										"bs": 3,
 										"headache": 2,
-										"unwellness": 4,
+										"unwellness": 0.5,
 										"nausea": 0
 									}
 								}
@@ -79318,7 +79318,7 @@
 										"fatigue": 3.5,
 										"bs": 3,
 										"headache": 1,
-										"unwellness": 2,
+										"unwellness": 1,
 										"nausea": 0
 									}
 								}
